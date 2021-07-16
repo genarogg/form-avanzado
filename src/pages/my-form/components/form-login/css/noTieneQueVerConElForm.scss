@@ -1,0 +1,101 @@
+@import "./form-login/variables";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: transparent;
+}
+
+body {
+  background: rgb(12, 12, 12);
+  display: flex;
+  font-family: Lato, sans-serif;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 99vh;
+}
+
+.backgroundHome {
+  background: linear-gradient(
+    to top,
+    $colorPurpleOscuro,
+    $colorBackgroundBlackDark
+  );
+  height: 186%;
+  left: -200px;
+  position: fixed;
+  transform: rotate(-183deg);
+  top: -200px;
+  width: 235%;
+  z-index: -150;
+}
+
+.container-my-form {
+  width: 100%;
+  height: 99vh;
+}
+.center-xy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundLigth {
+  display: block;
+  background-image: radial-gradient(
+    circle at center,
+    #ff57226b 0,
+    rgba(50, 51, 63, 0) 66.66%
+  );
+  left: 50%;
+  height: 200vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0;
+  width: 99vw;
+  z-index: -1;
+}
+
+.containerAll {
+  display: inherit;
+  flex-wrap: inherit;
+  min-height: inherit;
+  width: 100%;
+}
+
+::selection {
+  background: $azul;
+  color: #fff;
+  text-shadow: none;
+}
+
+a::selection {
+  background: $azul !important;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $azul !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #fff;
+  transition: $transicion600ms;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $azul;
+  transition: $transicion600ms;
+}
