@@ -1,0 +1,56 @@
+$gris: #333;
+$azul: #4353ff;
+
+
+
+
+$formBackground: rgba(#fff, 0.5);
+$transparenciasInternas: rgba(#fff, 0.3);
+
+/* Paleta de colores */
+$colorPurpleSuave: #7535b6;
+$colorPurpleIntermedio: #521e87;
+$colorPurpleOscuro: #390f64;
+$colorAzulMorado: #6200ff;
+
+$colorNaranja: #ff5722;
+$azulClaro: #14a4ff;
+
+/* colores de los team */
+$colorTeamSvelte: #ff3e00;
+$colorTeamReact: #0d47a1;
+$colorTeamVue: #41b883;
+$colorTeamAngular: #e23237;
+
+
+
+$colorBackgroundBlackLigt: #17171d;
+$colorBackgroundColorFixed: #1b003a;
+$colorBackgroundBlackDark: #05070b;
+
+
+
+
+
+$img-line: url(../../img/line.png);
+
+/* fonts */
+$fontBasic: "Lato", "Crete Round", sans-serif;
+$fontTitle: "Crete Round", "Lato", sans-serif;
+
+$colorIcons: #fff;
+$textForm: #fff;
+
+/* Morados */
+
+$formBackground: $colorPurpleOscuro;
+$formInputBackground: $colorPurpleIntermedio;
+$colorFormButton: #d740da;
+
+/* bordes */
+$borderRadius: 10px;
+$border: 1px solid #fff;
+
+/* transicion */
+$transicion600ms: all ease 0.6s;
+$transitionS1: 1s ease all;
