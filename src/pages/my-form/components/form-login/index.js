@@ -18,7 +18,7 @@ const Index = () => {
           justifyContent: "center",
           display: "flex",
         }}
-        className="containerForm activeRight"
+        className="containerForm"
         id="containerRegisterLogin"
       >
         <ResetPassword />
