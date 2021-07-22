@@ -2,7 +2,7 @@ import React from "react";
 import Buttons from "./components/Buttons";
 import RedesLogin from "./components/RedesLogin";
 import Icono from "../../../../components/nano/Icono";
-import $, { $toggle, $classList } from "../../../../functions/$";
+import $, { $toggle, $classList,$alternalClass } from "../../../../functions/$";
 
 import focus  from "./functions/focus";
 import nextInput from "./functions/nextInput";
@@ -35,6 +35,9 @@ const Login = () => {
   /* cambia el color del check de remember */
   const remerberme = () => {
     $toggle("checkRemember", "active");
+
+    $toggle("checkRemember", "icon-check-square");
+    $toggle("checkRemember", "icon-plus-square");
   };
 
   return (
@@ -91,7 +94,7 @@ const Login = () => {
               remerberme();
             }}
           >
-            <Icono css="icon-check_circle_outline" id="checkRemember" />
+            <Icono css="icon-plus-square" id="checkRemember" />
             <label htmlFor="checkRemember" id="checkRememberLabel">
               <p>Mantener sesion</p>
             </label>
