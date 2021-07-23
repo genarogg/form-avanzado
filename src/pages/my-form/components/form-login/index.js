@@ -7,6 +7,8 @@ import ResetPassword from "./ResetPassword";
 import "./css/form-login/index.css";
 import "./css/noTieneQueVerConElForm.css";
 
+import ChangeColor from "../../../../components/miselanea/ChangeColor"
+
 const Index = () => {
   return (
     <div className="container-my-form center-xy">
@@ -25,6 +27,7 @@ const Index = () => {
         <Login />
         <Register />
       </div>
+      <ChangeColor position={{bottom: "80px", right:"80px"}}/>
     </div>
   );
 };
