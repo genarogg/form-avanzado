@@ -2,7 +2,7 @@ import React from "react";
 import Buttons from "./components/Buttons";
 import RedesLogin from "./components/RedesLogin";
 import Icono from "../../../../components/nano/Icono";
-import $, { $toggle, $classList,$alternalClass } from "../../../../functions/$";
+import $, { $toggle, $classList } from "../../../../functions/$";
 
 import focus  from "./functions/focus";
 import nextInput from "./functions/nextInput";
