@@ -3247,8 +3247,29 @@ $transparenciasInternas: rgba(#fff, 0.3);
 }
 .black .animationCircle.active:before {
   border: 4px solid transparent;
+  -webkit-animation: circleBlack 0.6s 0.6s forwards;
+          animation: circleBlack 0.6s 0.6s forwards;
 }
-@keyframes circle {
+@-webkit-keyframes circleBlack {
+  0% {
+    border-color: transparent;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    border-color: transparent #fff transparent transparent;
+  }
+  50% {
+    border-color: transparent #fff #fff transparent;
+  }
+  75% {
+    border-color: transparent #fff #fff #fff;
+  }
+  100% {
+    border-color: #fff;
+  }
+}
+@keyframes circleBlack {
   0% {
     border-color: transparent;
     -webkit-transform: rotate(0deg);
@@ -3500,8 +3521,29 @@ $transparenciasInternas: rgba(#fff, 0.3);
 }
 .white .animationCircle.active:before {
   border: 4px solid transparent;
+  -webkit-animation: circleWhite 0.6s 0.6s forwards;
+          animation: circleWhite 0.6s 0.6s forwards;
 }
-@keyframes circle {
+@-webkit-keyframes circleWhite {
+  0% {
+    border-color: transparent;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    border-color: transparent #333 transparent transparent;
+  }
+  50% {
+    border-color: transparent #333 #333 transparent;
+  }
+  75% {
+    border-color: transparent #333 #333 #333;
+  }
+  100% {
+    border-color: #333;
+  }
+}
+@keyframes circleWhite {
   0% {
     border-color: transparent;
     -webkit-transform: rotate(0deg);
