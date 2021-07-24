@@ -330,6 +330,7 @@ $transparenciasInternas: rgba(#fff, 0.3);
 }
 
 @-webkit-keyframes circle {
+  /* $colorFormButton: #d740da; */
   0% {
     border-color: transparent;
     -webkit-transform: rotate(0deg);
@@ -352,6 +353,7 @@ $transparenciasInternas: rgba(#fff, 0.3);
 }
 
 @keyframes circle {
+  /* $colorFormButton: #d740da; */
   0% {
     border-color: transparent;
     -webkit-transform: rotate(0deg);
