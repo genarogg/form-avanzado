@@ -12,6 +12,7 @@ import ChangeColor from "../../../../components/miselanea/ChangeColor"
 const Index = () => {
   return (
     <div className="container-my-form center-xy">
+       <ChangeColor position={{bottom: "80px", right:"80px"}}/>
       <div className="backgroundHome"></div>
       <div className="backgroundLigth"></div>
       <div
@@ -27,7 +28,7 @@ const Index = () => {
         <Login />
         <Register />
       </div>
-      <ChangeColor position={{bottom: "80px", right:"80px"}}/>
+     
     </div>
   );
 };
