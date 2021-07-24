@@ -19,17 +19,14 @@ const ChangeColor = ({ position }) => {
     localStorage.setItem("theme", color);
   };
 
-  const local = () => {
+
+  useEffect(() => {
     try {
       const color = localStorage.getItem("theme") || "default";
 
       change(color);
-    } catch (e) {}
-  };
-
-  useEffect(() => {
-    local();
-    return () => {};
+    } catch (e) {};
+  
   }, []);
   return (
     <>
