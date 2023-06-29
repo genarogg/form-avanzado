@@ -7,12 +7,13 @@ import ResetPassword from "./caras/ResetPassword";
 import "./css/form-login/index.css";
 import "./css/noTieneQueVerConElForm.css";
 
-import ChangeColor from "../miselanea/ChangeColor"
+import ChangeColor from "../miselanea/ChangeColor";
+/* import ip from "ip"; */
 
 const Form = () => {
   return (
     <div className="container-my-form">
-    <ChangeColor position={{bottom: "10px", right:"10px"}}/>
+      <ChangeColor position={{ bottom: "10px", right: "10px" }} />
       <div className="backgroundHome"></div>
       <div className="backgroundLigth"></div>
       <div
@@ -28,7 +29,7 @@ const Form = () => {
         <Login />
         <Register />
       </div>
-     
+
     </div>
   );
 };

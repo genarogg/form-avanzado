@@ -1,7 +1,6 @@
 import $, { $activeElement, $value } from "./$";
 /* El parametro es para saber que componente lo llama */
 const check = (component) => {
-
   /* Resive como parametro un hijo del arbol y le agrega una clase al padre */
   const input = (value) => {
     if ($value(value) === "" || $value(value) === undefined) {
@@ -30,7 +29,6 @@ const check = (component) => {
     if ($activeElement() === "loginButton") {
       input("loginCorreo");
       input("loginPassword");
-      
     }
   }
 };

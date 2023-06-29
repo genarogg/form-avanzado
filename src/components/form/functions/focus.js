@@ -1,8 +1,4 @@
-import $, {
-  $activeElement,
-  $classList,
-  $contain,
-} from "../../../functions/$";
+import $, { $activeElement, $classList, $contain } from "./$";
 
 const focus = () => {
   /* Condiciones para la tarjeta de Login */

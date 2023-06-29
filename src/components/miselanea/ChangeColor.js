@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { $classList, $toggle } from "../../functions/$";
+import { $classList, $toggle } from "../form/functions/$";
 
 import "../../css/miselanea/changeColor.css";
 
@@ -19,14 +19,12 @@ const ChangeColor = ({ position }) => {
     localStorage.setItem("theme", color);
   };
 
-
   useEffect(() => {
     try {
       const color = localStorage.getItem("theme") || "default";
 
       change(color);
-    } catch (e) {};
-  
+    } catch (e) {}
   }, []);
   return (
     <>
@@ -49,7 +47,7 @@ const ChangeColor = ({ position }) => {
               <button
                 onClick={() => {
                   change("morado");
-                  active()
+                  active();
                 }}
                 id="morado"
               >
@@ -60,7 +58,7 @@ const ChangeColor = ({ position }) => {
               <button
                 onClick={() => {
                   change("black");
-                  active()
+                  active();
                 }}
                 id="negro"
               >
@@ -71,7 +69,7 @@ const ChangeColor = ({ position }) => {
               <button
                 onClick={() => {
                   change("white");
-                  active()
+                  active();
                 }}
                 id="blanco"
               >

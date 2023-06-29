@@ -22,13 +22,24 @@ const $style = (getId) => {
 };
 
 const $value = (id) => {
-    return $(id).value;
-  };
-  
+  return $(id).value;
+};
 
 /* Devuelve el id del elemento activo */
 const $activeElement = () => {
   return document.activeElement.id;
 };
 
-export { $toggle, $classList, $focus, $style, $activeElement, $value };
+const $contain = (id, contain) => {
+  return $(id).classList.contains(contain);
+};
+
+export {
+  $toggle,
+  $classList,
+  $focus,
+  $style,
+  $activeElement,
+  $value,
+  $contain,
+};
