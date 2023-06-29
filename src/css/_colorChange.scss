@@ -1,5 +1,3 @@
-
-
 .black {
   $colorBackgroundBlackDark: #05070b;
   $gris: #333;
@@ -58,8 +56,6 @@
           &:before {
             border: 1px solid #fff;
           }
-
-        
 
           & span:last-child {
             background: transparent;
@@ -372,15 +368,16 @@
   /* bordes */
   $borderRadius: 10px;
   $border: 1px solid #fff;
-  $img-line: url("../../img/line3.png");
+
+  $img-line: url("./img/line3.png");
 
   .ico {
     color: #222;
   }
 
-  .buttonSesion{
-    span{
-      color: $textForm
+  .buttonSesion {
+    span {
+      color: $textForm;
     }
   }
 
@@ -521,8 +518,6 @@
       button {
         border: 1px solid #000;
         color: $textForm;
-
-        
       }
     }
 
@@ -661,7 +656,7 @@
       &.submit:focus {
         background-color: #282828 !important;
 
-        color: #fff
+        color: #fff;
       }
 
       &.submit:hover {

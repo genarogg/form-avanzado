@@ -1,4 +1,6 @@
-@import "./form-login/variables";
+/* @use "./form-login/variables"; */
+@import "../components/form/css/form-login/variables";
+
 * {
   box-sizing: border-box;
   margin: 0;

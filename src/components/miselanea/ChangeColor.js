@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 
 import { $classList, $toggle } from "../form/functions/$";
 
-import "../../css/miselanea/changeColor.css";
-
 import Icono from "../nano/Icono";
 
 const ChangeColor = ({ position }) => {
