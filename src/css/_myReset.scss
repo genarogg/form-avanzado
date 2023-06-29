@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: indigo;
+  color: #fff;
+  text-shadow: none;
+}
+
+a::selection {
+  background: indigo;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid indigo !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #fff;
+  transition: 600ms all ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background: indigo;
+  transition: 600ms all ease;
+}
