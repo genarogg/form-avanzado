@@ -2,7 +2,7 @@ import $, {
   $activeElement,
   $classList,
   $contain,
-} from "../../../../../functions/$";
+} from "../../../functions/$";
 
 const focus = () => {
   /* Condiciones para la tarjeta de Login */

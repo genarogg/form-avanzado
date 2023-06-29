@@ -1,6 +1,6 @@
 import React from "react";
-import A from "../../../../../components/nano/A";
-import Icono from "../../../../../components/nano/Icono";
+import A from "../../../nano/A";
+import Icono from "../../../nano/Icono";
 
 const RedesLogin = () => {
   return (

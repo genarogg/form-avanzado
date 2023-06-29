@@ -1,6 +1,6 @@
 import focus from "./focus";
 
-import { $activeElement, $focus } from "../../../../../functions/$";
+import { $activeElement, $focus } from "../../../functions/$";
 
 /* El primer parametro es para saber que tecla preciono
     El segundo parametro es para saber donde estas

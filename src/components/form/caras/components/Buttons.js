@@ -1,5 +1,5 @@
 import React from "react";
-import $, { $style, $classList } from "../../../../../functions/$";
+import $, { $style, $classList } from "../../functions/$";
 
 const Buttons = () => {
  

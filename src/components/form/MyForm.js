@@ -1,18 +1,18 @@
 import React from "react";
 
-import Login from "./Login";
-import Register from "./Register";
-import ResetPassword from "./ResetPassword";
+import Login from "./caras/Login";
+import Register from "./caras/Register";
+import ResetPassword from "./caras/ResetPassword";
 
 import "./css/form-login/index.css";
 import "./css/noTieneQueVerConElForm.css";
 
-import ChangeColor from "../../../../components/miselanea/ChangeColor"
+import ChangeColor from "../miselanea/ChangeColor"
 
-const Index = () => {
+const Form = () => {
   return (
     <div className="container-my-form">
-       <ChangeColor position={{bottom: "10px", right:"10px"}}/>
+    <ChangeColor position={{bottom: "10px", right:"10px"}}/>
       <div className="backgroundHome"></div>
       <div className="backgroundLigth"></div>
       <div
@@ -33,4 +33,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Form;

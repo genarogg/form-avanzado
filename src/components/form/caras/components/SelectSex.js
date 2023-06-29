@@ -1,8 +1,8 @@
 import React from "react";
-import $, { $toggle, $focus, $classList } from "../../../../../functions/$";
-import Icono from "../../../../../components/nano/Icono";
+import $, { $toggle, $focus, $classList } from "../../functions/$";
+import Icono from "../../../nano/Icono";
 
-import focus from "../functions/focus";
+import focus from "../../functions/focus";
 
 const SelectSex = () => {
   const dropdown = () => {

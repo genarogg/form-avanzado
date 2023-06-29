@@ -1,11 +1,11 @@
 import React from "react";
 
-import Icono from "../../../../components/nano/Icono";
-import A from "../../../../components/nano/A";
+import Icono from "../../nano/Icono";
+import A from "../../nano/A";
 
-import $ from "../../../../functions/$";
+import $ from "../functions/$";
 
-import focus  from "./functions/focus";
+import focus  from "../functions/focus";
 
 const ResetPassword = () => {
 

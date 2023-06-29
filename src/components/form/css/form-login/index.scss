@@ -1,0 +1,20 @@
+@import "./variables";
+
+@import "./formGlobal";
+
+/* tarjetas */
+@import "./faces/resetPassWord";
+@import "./faces/login";
+@import "./faces/register";
+
+/* Paquetes de las tarjetas */
+@import "./components/loginRedes";
+@import "./components/selectes";
+
+
+/* resposive design */
+@import "responsive-design";
+
+@import "../colorChange";
+
+/* Colores de las redes sociales */

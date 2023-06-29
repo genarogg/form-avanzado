@@ -14,8 +14,8 @@ const $activeElement = () => {
 };
 
 const $value = (id) => {
-  return $(id).value
-}
+  return $(id).value;
+};
 
 const $toggle = (id, css) => {
   return $(id).classList.toggle(css);
@@ -118,9 +118,9 @@ const log = (
   return console.log(`%c${mensaje}`, style);
 };
 
-const $focus = (id) =>{
-  return $(id).focus()
-}
+const $focus = (id) => {
+  return $(id).focus();
+};
 export {
   $alternalClass,
   $activeElement,

@@ -1,7 +1,7 @@
 import React from "react";
 
-import A from "../../../../components/nano/A";
-import Icono from "../../../../components/nano/Icono";
+import A from "../../nano/A";
+import Icono from "../../nano/Icono";
 
 import Buttons from "./components/Buttons";
 import RedesLogin from "./components/RedesLogin";
@@ -9,9 +9,9 @@ import RedesLogin from "./components/RedesLogin";
 import SelectCountry from "./components/SelectCountry";
 import SelectSex from "./components/SelectSex";
 
-import focus from "./functions/focus";
-import nextInput from "./functions/nextInput";
-import check from "./functions/check";
+import focus from "../functions/focus";
+import nextInput from "../functions/nextInput";
+import check from "../functions/check";
 
 const Register = () => {
   const submit = (e) => {
@@ -175,11 +175,11 @@ const Register = () => {
       </form>
       <div className="legal">
         <p>
-          Al registrarte, estas aceptando los{" "}
-          <A href={"/terminos-y-condiciones"}>Términos y condiciones</A>, y la{" "}
-          <A href="/politica-de-privacidad-y-protección-de-datos">
+          Al registrarte, estas aceptando los
+          <A to={"/terminos-y-condiciones"}>Términos y condiciones</A>, y la
+          <A to="/politica-de-privacidad-y-protección-de-datos">
             Política de privacidad y protección de datos
-          </A>{" "}
+          </A>
           de Genarogg.
         </p>
       </div>

@@ -1,4 +1,4 @@
-import $, { $activeElement, $value } from "../../../../../functions/$";
+import $, { $activeElement, $value } from "./$";
 /* El parametro es para saber que componente lo llama */
 const check = (component) => {
 

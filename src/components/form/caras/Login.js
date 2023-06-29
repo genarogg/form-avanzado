@@ -1,20 +1,17 @@
 import React from "react";
 import Buttons from "./components/Buttons";
 import RedesLogin from "./components/RedesLogin";
-import Icono from "../../../../components/nano/Icono";
-import $, { $toggle, $classList } from "../../../../functions/$";
+import Icono from "../../nano/Icono";
+import $, { $toggle, $classList } from "../functions/$";
 
-import focus  from "./functions/focus";
-import nextInput from "./functions/nextInput";
-import check from "./functions/check";
+import focus from "../functions/focus";
+import nextInput from "../functions/nextInput";
+import check from "../functions/check";
 
 const Login = () => {
-
   const submit = (e) => {
     e.preventDefault();
   };
-  
-
 
   /* Voltea la tarjeta para recuperar la contraseña */
   const voltearRecuperar = () => {
@@ -50,7 +47,12 @@ const Login = () => {
         }}
       >
         <Buttons />
-        <form className="row" onSubmit={(e) => {submit(e)}}>
+        <form
+          className="row"
+          onSubmit={(e) => {
+            submit(e);
+          }}
+        >
           <div className="row col-xs-12 containerInput">
             <label htmlFor="loginCorreo" className="icoBackground col-xs-1">
               <Icono css="icon-mail" />
@@ -64,7 +66,6 @@ const Login = () => {
               onClick={() => {
                 focus();
               }}
-
               onKeyDown={(e) => {
                 nextInput(e, "loginCorreo", "loginPassword");
               }}
@@ -121,7 +122,6 @@ const Login = () => {
             <button
               type="button"
               className="registrarse link"
-            
               onClick={() => {
                 voltearRecuperar();
               }}
