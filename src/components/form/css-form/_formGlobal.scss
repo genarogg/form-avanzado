@@ -1,3 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .containerForm {
   color: #fff;
   cursor: default;
@@ -32,7 +51,6 @@
   p {
     text-align: left;
     color: $textForm;
-    
   }
 
   button {
