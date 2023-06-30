@@ -34,16 +34,15 @@
     cursor: pointer;
   }
   input[type="date"] {
+    position: relative;
 
-
-    &::-webkit-calendar-picker-indicator{
+    &::-webkit-calendar-picker-indicator {
       opacity: 0;
       position: absolute;
       width: 100%;
       height: 100%;
+
     }
-
-
   }
 }
 

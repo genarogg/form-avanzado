@@ -110,11 +110,11 @@ const Register = () => {
       </form>
       <div className="legal">
         <p>
-          Al registrarte, estas aceptando los
-          <A to={"/terminos-y-condiciones"}>Términos y condiciones</A>, y la
+          Al registrarte, estas aceptando los{" "}
+          <A to={"/terminos-y-condiciones"}>Términos y condiciones</A>, y la{" "}
           <A to="/politica-de-privacidad-y-protección-de-datos">
             Política de privacidad y protección de datos
-          </A>
+          </A>{" "}
           de Genarogg.
         </p>
       </div>

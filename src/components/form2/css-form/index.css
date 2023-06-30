@@ -536,11 +536,13 @@
     transition: all ease 0.6s; }
 .containerForm input#userData {
   cursor: pointer; }
-.containerForm input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%; }
+.containerForm input[type="date"] {
+  position: relative; }
+  .containerForm input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
 .formGroupSesion .containerRegister {
   -webkit-box-align: center;
