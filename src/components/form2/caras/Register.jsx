@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import A from "../../nano/A";
 
@@ -12,10 +12,82 @@ import focus from "../functions/focus";
 import check from "../functions/check";
 import Input from "./components/Input";
 
+import $, { $validarContrasenaDebil } from "../functions/$";
+
 const Register = () => {
+  const isValido = () => {
+    const validacion = $("validacion");
+    validacion.classList.add("active");
+
+    setTimeout(() => {
+      validacion.classList.remove("active");
+    }, 3000);
+  };
   const submit = (e) => {
     e.preventDefault();
+
+    const nombre = $("registerUserName").value;
+    const apellido = $("registerUserSurName").value;
+    const userData = $("userData").value;
+    const registerCorreo = $("registerCorreo").value;
+
+    const sex = $("selLabel2").value;
+    const contry = $("selLabel").innerText;
+
+    const contrasena1 = $("registerPassword").value;
+    const contrasena2 = $("registerPasswordConfirm").value;
+
+    if (
+      nombre === "" ||
+      apellido === "" ||
+      userData === "" ||
+      registerCorreo === "" ||
+      sex === "" ||
+      contry === "" ||
+      contrasena1 === ""
+    ) {
+      setmensaje("todos los campos son necesarios.");
+      isValido();
+      return;
+    }
+    console.log(contrasena1.length);
+    if (contrasena1.length < 8) {
+      isValido();
+      setmensaje("la contraseña debe ser mayor a 8 caracteres");
+      return;
+    }
+    if (contrasena1 !== contrasena2) {
+      setmensaje("Las contraseñas coinciden.");
+      isValido();
+      return;
+    }
+
+    if($validarContrasenaDebil(contrasena1)){
+      setmensaje("La contraseña debe ser alfanumérico");
+      isValido();
+      return;
+    }
+
+    $("registerButtom").innerText = "creando cuenta";
+
+    const data = {
+      nombre,
+      apellido,
+      userData,
+      registerCorreo,
+      sex,
+      contry,
+      contrasena1,
+    };
+
+    console.log(data);
+
+    /* setTimeout(() => {
+      $("registerButtom").innerText = "Crear cuenta"
+    }, 1500); */
   };
+
+  const [mensaje, setmensaje] = useState("dsdfdsfsdfsdf");
 
   return (
     <div
@@ -29,7 +101,6 @@ const Register = () => {
       <Buttons />
 
       <form
-        className="row"
         onSubmit={(e) => {
           submit(e);
         }}
@@ -92,6 +163,10 @@ const Register = () => {
         />
 
         <RedesLogin />
+
+        <div className="validacion" id="validacion">
+          <p>{mensaje}</p>
+        </div>
 
         <div className="containerRegister">
           <button

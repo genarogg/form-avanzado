@@ -34,6 +34,13 @@ const $contain = (id, contain) => {
   return $(id).classList.contains(contain);
 };
 
+const $validarContrasenaDebil = (contrasena) => {
+  if (/[a-z]/.test(contrasena) && /[0-9]/.test(contrasena)) {
+    return false;
+  }
+  return true;
+};
+
 export {
   $toggle,
   $classList,
@@ -42,4 +49,5 @@ export {
   $activeElement,
   $value,
   $contain,
+  $validarContrasenaDebil,
 };
