@@ -15,7 +15,7 @@ const MyForm = () => {
           justifyContent: "center",
           display: "flex",
         }}
-        className="containerForm"
+        className="containerForm new-css"
         id="containerRegisterLogin"
       >
    
