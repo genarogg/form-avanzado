@@ -1,6 +1,7 @@
 import React from "react";
 import ChangeColor from "./miselanea/ChangeColor";
 import MyForm from "./form/MyForm.js";
+import MyForm2 from "./form2/MyForm2.js";
 const Layouts = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Layouts = () => {
         <div className="backgroundHome"></div>
         <div className="backgroundLigth"></div>
         <MyForm />
+        <MyForm2 />
       </div>
     </>
   );
