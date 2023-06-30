@@ -93,7 +93,7 @@
       /* padding: 0 10px 0 8px; */
       transition: $transicion600ms;
       overflow: hidden;
-
+      width: 100%;
       &:hover {
         border: 1px solid $colorFormButton;
         transition: $transicion600ms;

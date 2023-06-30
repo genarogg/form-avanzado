@@ -4,9 +4,10 @@ import Buttons from "./components/Buttons";
 import Icono from "../../nano/Icono";
 import $, { $toggle, $classList } from "../functions/$";
 import RedesLogin from "./components/RedesLogin";
-import focus from "../functions/focus";
-import nextInput from "../functions/nextInput";
+
 import check from "../functions/check";
+
+import Input from "./components/Input";
 
 const Login = () => {
   const submit = (e) => {
@@ -37,29 +38,7 @@ const Login = () => {
     $toggle("checkRemember", "icon-plus-square");
   };
 
-  const Input = ({ type, id, icono, placeholder, next }) => {
-    return (
-      <>
-        <div className="containerInput">
-          <label htmlFor={id}>
-            <Icono css={icono} />
-          </label>
-          <input
-            name={id}
-            id={id}
-            type={type}
-            placeholder={placeholder}
-            onClick={() => {
-              focus();
-            }}
-            onKeyDown={(e) => {
-              nextInput(e, id, next);
-            }}
-          />
-        </div>
-      </>
-    );
-  };
+
   return (
     <>
       <div className="front formGroupSesion">
