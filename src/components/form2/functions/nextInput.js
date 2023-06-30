@@ -7,7 +7,11 @@ import { $activeElement, $focus } from "./$";
     y el tercer parametro es para el input al que quiero ir */
 const nextInput = (e, setActived, setOnActive) => {
   const nextActive = (actived, onActive) => {
-    if (e.keyCode === 13 && $activeElement() === actived) {
+    console.log(e.keyCode);
+    if (
+      (e.keyCode === 13 && $activeElement() === actived) ||
+      (e.keyCode === 9 && $activeElement() === actived)
+    ) {
       $focus(onActive);
     }
   };
