@@ -10,6 +10,12 @@
     transition: $transicion600ms;
     z-index: 1;
     box-shadow: 0px 0px 5px transparent;
+
+    label span{
+      display: block;
+      margin: 0 auto;
+      margin-top: 1px;
+    }
   }
 }
 

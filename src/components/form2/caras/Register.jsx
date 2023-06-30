@@ -1,7 +1,6 @@
 import React from "react";
 
 import A from "../../nano/A";
-import Icono from "../../nano/Icono";
 
 import Buttons from "./components/Buttons";
 import RedesLogin from "./components/RedesLogin";
@@ -10,9 +9,7 @@ import SelectCountry from "./components/selected/SelectCountry";
 import SelectSex from "./components/selected/SelectSex";
 
 import focus from "../functions/focus";
-import nextInput from "../functions/nextInput";
 import check from "../functions/check";
-
 import Input from "./components/Input";
 
 const Register = () => {

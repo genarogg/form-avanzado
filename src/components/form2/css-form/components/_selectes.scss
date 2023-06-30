@@ -3,7 +3,7 @@
   * {
     /*  */
     transition: 800ms all cubic-bezier(0.5, 0, 0.5, 1) !important;
-    will-change: auto;
+    will-change: transform;
   }
 
   border: 1px solid transparent;

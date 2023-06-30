@@ -13,6 +13,7 @@ const ResetPassword = () => {
 
   const voltearIniciar = () => {
     const tarjeta = $("containerRegisterLogin");
+ 
 
     $("traseraDerecha").style.display = "none";
     if (
@@ -74,7 +75,6 @@ const ResetPassword = () => {
             />
 
             <button
-              type="submit"
               className="submitEmail"
               onSubmit={(e) => {
                 submit(e);
