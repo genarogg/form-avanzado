@@ -85,11 +85,12 @@
       background-color: $formInputBackground !important;
       border: 1px solid transparent;
       border-radius: 4px;
-      height: 39px;
+      display: grid;
+      grid-template-columns: 2fr 14fr;
 
       margin-bottom: 30px;
       justify-content: center;
-      padding: 0 10px 0 8px;
+      /* padding: 0 10px 0 8px; */
       transition: $transicion600ms;
       overflow: hidden;
 
@@ -103,23 +104,32 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        padding-left: 8px;
+       /*  padding-left: 8px; */
       }
     }
     .error {
       border: 1px solid #00acee;
     }
+
+    label{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
+
+
 
   input {
     background-color: transparent !important;
-    border: 3px solid transparent;
-    border-radius: 4px;
+    /* border: 3px solid transparent; */
+    border: none;
+    /* border-radius: 4px; */
     color: $textForm !important;
 
     font-weight: 300;
-    height: 100%;
-    padding: 10px 0px 10px 10px;
+    height: 39px;
+    /* padding: 10px 0px 10px 10px; */
 
     &:focus {
       background-color: transparent;
@@ -136,6 +146,8 @@
     &::-ms-input-placeholder {
       color: $textForm !important;
     }
+
+    
   }
 
   .buttonSesion {

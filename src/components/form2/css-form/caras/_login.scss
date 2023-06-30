@@ -2,8 +2,10 @@
   .front {
     backface-visibility: hidden;
     border: 1px solid transparent;
-    max-height: 420px;
-    min-height: 420px;
+
+    max-height: 450px;
+    min-height: 450px;
+
     position: relative;
     transition: $transicion600ms;
     z-index: 1;
@@ -12,18 +14,23 @@
 }
 
 .checkBoxContainer {
-  .ico {
-    margin-right: 7px;
-    margin-left: 10px;
+  display: grid;
+  grid-template-columns: 2fr 14fr;
+  height: 39px;
 
+  label {
+    justify-content: left !important;
+  }
+
+  span {
     color: #fff;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &.active {
       color: $colorFormButton;
     }
-
-   
   }
 
   p,
@@ -37,7 +44,7 @@
   .buttonContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 
     button.login {
       border: 1px solid #fff;
@@ -46,7 +53,7 @@
       height: 40px;
 
       outline: none;
-      padding: 5px 20px;
+      /* padding: 5px 20px; */
       width: 50%;
     }
   }

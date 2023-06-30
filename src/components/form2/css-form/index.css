@@ -136,12 +136,13 @@
       background-color: #521e87 !important;
       border: 1px solid transparent;
       border-radius: 4px;
-      height: 39px;
+      display: grid;
+      grid-template-columns: 2fr 14fr;
       margin-bottom: 30px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding: 0 10px 0 8px;
+      /* padding: 0 10px 0 8px; */
       -webkit-transition: all ease 0.6s;
       transition: all ease 0.6s;
       overflow: hidden; }
@@ -160,17 +161,28 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding-left: 8px; }
+        /*  padding-left: 8px; */ }
     .formGroupSesion form .error {
       border: 1px solid #00acee; }
+    .formGroupSesion form label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
   .formGroupSesion input {
     background-color: transparent !important;
-    border: 3px solid transparent;
-    border-radius: 4px;
+    /* border: 3px solid transparent; */
+    border: none;
+    /* border-radius: 4px; */
     color: #fff !important;
     font-weight: 300;
-    height: 100%;
-    padding: 10px 0px 10px 10px; }
+    height: 39px;
+    /* padding: 10px 0px 10px 10px; */ }
     .formGroupSesion input:focus {
       background-color: transparent;
       outline: none; }
@@ -283,7 +295,8 @@
   max-height: 300px;
   min-height: 300px; }
   .containerForm .backLeft .containerInput {
-    padding-right: 0; }
+    padding-right: 0;
+    grid-template-columns: 2fr 11fr 2fr; }
   .containerForm .backLeft .buttonBack {
     position: relative;
     -webkit-box-pack: start;
@@ -392,8 +405,8 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border: 1px solid transparent;
-  max-height: 420px;
-  min-height: 420px;
+  max-height: 450px;
+  min-height: 450px;
   position: relative;
   -webkit-transition: all ease 0.6s;
   transition: all ease 0.6s;
@@ -401,16 +414,31 @@
   -webkit-box-shadow: 0px 0px 5px transparent;
           box-shadow: 0px 0px 5px transparent; }
 
-.checkBoxContainer .ico {
-  margin-right: 7px;
-  margin-left: 10px;
-  color: #fff; }
-  .checkBoxContainer .ico.active {
-    color: #d740da; }
-.checkBoxContainer p,
-.checkBoxContainer label,
-.checkBoxContainer span {
-  cursor: pointer; }
+.checkBoxContainer {
+  display: grid;
+  grid-template-columns: 2fr 14fr;
+  height: 39px; }
+  .checkBoxContainer label {
+    -webkit-box-pack: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important; }
+  .checkBoxContainer span {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .checkBoxContainer span.active {
+      color: #d740da; }
+  .checkBoxContainer p,
+  .checkBoxContainer label,
+  .checkBoxContainer span {
+    cursor: pointer; }
 
 .formGroupSesion .buttonContainer {
   display: -webkit-box;
@@ -419,14 +447,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px; }
+  margin: 20px 0; }
   .formGroupSesion .buttonContainer button.login {
     border: 1px solid #fff;
     border-radius: 5px;
     color: white;
     height: 40px;
     outline: none;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     width: 50%; }
 .formGroupSesion .forgotPasswordContainer {
   display: -webkit-box;
