@@ -58,11 +58,7 @@ const ResetPassword = () => {
           <p>Restablecer la contraseña</p>
           <hr className="titleHr" />
         </div>
-        <form
-          onSubmit={(e) => {
-            submit(e);
-          }}
-        >
+        <form>
           <div className=" containerInput">
             <label htmlFor="resetPassword" className="icoBackground ">
               <Icono css="icon-mail" />
@@ -77,7 +73,13 @@ const ResetPassword = () => {
               }}
             />
 
-            <button type="submit" className="submitEmail">
+            <button
+              type="submit"
+              className="submitEmail"
+              onSubmit={(e) => {
+                submit(e);
+              }}
+            >
               <span className="ico icon-send"></span>
             </button>
           </div>

@@ -8,7 +8,7 @@ import RedesLogin from "./components/RedesLogin";
 import check from "../functions/check";
 
 import Input from "./components/Input";
-
+import focus from "../functions/focus";
 const Login = () => {
   const submit = (e) => {
     e.preventDefault();
@@ -38,10 +38,13 @@ const Login = () => {
     $toggle("checkRemember", "icon-plus-square");
   };
 
-
   return (
     <>
-      <div className="front formGroupSesion">
+      <div className="front formGroupSesion"id="front"
+        onClick={() => {
+          focus();
+        }}
+      >
         <Buttons />
         <form>
           <Input
@@ -78,8 +81,9 @@ const Login = () => {
               id="loginButton"
               type="submit"
               value="send"
-              onClick={() => {
+              onClick={(e) => {
                 check("login");
+                submit(e)
               }}
             >
               Acceder

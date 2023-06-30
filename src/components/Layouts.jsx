@@ -10,7 +10,7 @@ const Layouts = () => {
         <div className="backgroundHome"></div>
         <div className="backgroundLigth"></div>
         <MyForm2 />
-        <MyForm />
+       {/*  <MyForm /> */}
        
       </div>
     </>
