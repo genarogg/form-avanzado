@@ -50,7 +50,7 @@ const Register = () => {
       isValido();
       return;
     }
-    console.log(contrasena1.length);
+
     if (contrasena1.length < 8) {
       isValido();
       setmensaje("la contraseña debe ser mayor a 8 caracteres");
@@ -62,7 +62,7 @@ const Register = () => {
       return;
     }
 
-    if($validarContrasenaDebil(contrasena1)){
+    if ($validarContrasenaDebil(contrasena1)) {
       setmensaje("La contraseña debe ser alfanumérico");
       isValido();
       return;
@@ -73,21 +73,29 @@ const Register = () => {
     const data = {
       nombre,
       apellido,
-      userData,
-      registerCorreo,
-      sex,
+      FechaDeNacimiento: userData,
+      email: registerCorreo,
+      sexo: sex,
       contry,
-      contrasena1,
+      password: contrasena1,
     };
 
     console.log(data);
+
+    fetch("http://localhost:4000/api/usuarios", {
+      method: "POST", // o 'PUT'
+      body: JSON.stringify(data), // data debe ser `string` o {object}!
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).catch(async (error) => console.error("Error:", error));
 
     /* setTimeout(() => {
       $("registerButtom").innerText = "Crear cuenta"
     }, 1500); */
   };
 
-  const [mensaje, setmensaje] = useState("dsdfdsfsdfsdf");
+  const [mensaje, setmensaje] = useState("");
 
   return (
     <div
